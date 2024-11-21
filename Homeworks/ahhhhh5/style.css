@@ -16,10 +16,6 @@
     padding: 1rem 2rem;
 }
 
-.navbar {}
-
-.nav {}
-
 .logo {
     display: grid;
     grid-template-rows: 50px;
@@ -97,8 +93,6 @@
 .special {
     background: #34a59f;
 }
-
-.part2 {}
 
 .part2 h2 {
     font-size: 3rem;
