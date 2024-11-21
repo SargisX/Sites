@@ -17,6 +17,7 @@
     <script>
         const apiUrl = "https://673f23ffa9bc276ec4b75913.mockapi.io/site/v1/Sites"
         const ghFile = 'https://raw.githubusercontent.com/sargisx/sites/master'
+        const ghPage = 'https://github.com/SargisX/Sites'
 
         function openFormPage() {
             window.location.href = "form.html"
@@ -31,10 +32,10 @@
 
                     const newCard = document.createElement("a")
                     newCard.classList.add("product-card")
-                    newCard.href = `${ghFile}/Homeworks/ahhhhh${id}/index.html`
+                    newCard.href = `${ghPage}/Homeworks/ahhhhh${id}/index.html`
 
                     const imgElement = document.createElement("img")
-                    imgElement.src = img
+                    imgElement.src = `${ghFile}/${img}`
                     imgElement.alt = title
                     newCard.appendChild(imgElement)
 
