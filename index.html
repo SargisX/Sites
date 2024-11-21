@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="title">My HTML Homeworks</h1>
+    <button class="add-btn" onclick="openFormPage()">Add Homework</button>
+    <div class="product-container" id="product-container">
+    </div>
+
+    <script>
+        const apiUrl = "https://673f23ffa9bc276ec4b75913.mockapi.io/site/v1/Sites"
+
+        function openFormPage() {
+            window.location.href = "form.html"
+        }
+        async function loadHomework() {
+            const container = document.getElementById("product-container")
+            try {
+                const response = await fetch(apiUrl)
+                const homeworkData = await response.json()
+                homeworkData.forEach(homework => {
+                    const { img, title, description, id } = homework
+
+                    const newCard = document.createElement("a")
+                    newCard.classList.add("product-card")
+                    newCard.href = `/Homeworks/ahhhhh${id}/index.html`
+
+                    const imgElement = document.createElement("img")
+                    imgElement.src = img
+                    imgElement.alt = title
+                    newCard.appendChild(imgElement)
+
+                    const titleElement = document.createElement("h3")
+                    titleElement.textContent = title
+                    newCard.appendChild(titleElement)
+
+                    const descriptionElement = document.createElement("p")
+                    descriptionElement.textContent = description
+                    newCard.appendChild(descriptionElement)
+
+                    container.appendChild(newCard)
+                })
+            } catch (error) {
+                console.error("Error fetching data from MockAPI:", error)
+            }
+        }
+        window.onload = loadHomework
+    </script>
+</body>
+
+</html>

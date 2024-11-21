@@ -1,0 +1,279 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+}
+
+
+
+/* first div */
+
+.firstDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.imageDiv1 {
+    width: 1200px;
+    height: 450px;
+    z-index: 2;
+    top: 0;
+    left: 5%;
+    position: absolute;
+}
+
+.imageDiv1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.textDiv1 {
+    z-index: 2;
+    position: absolute;
+    top: 60px;
+    left: 60%;
+    text-align: center;
+    width: 600px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDiv1 h1 {
+    font-size: 4rem;
+}
+
+.textDiv1 p {
+    font-size: 1rem;
+}
+
+.textDiv1 button {
+    background: #000;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: 0;
+}
+
+.bgDiv1 {
+    position: absolute;
+    z-index: 1;
+    width: 1275px;
+    height: 520px;
+    background: rgba(0, 216, 169, 0.815);
+    top: 15%;
+    left: 29%;
+}
+
+.border {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.context {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+
+/* second div */
+
+.secondtDiv {
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+    background: #000;
+    color: white;
+    display: flex;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+
+}
+
+.section1 h2 {
+    font-size: 30px;
+}
+
+.section1 p {
+    width: 600px;
+
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.section2 button {
+    border: none;
+    background: rgba(0, 216, 169, 0.815);
+    width: 140px;
+    height: 40px;
+    color: white;
+}
+
+
+
+/* third div  */
+
+.thirdiv {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+    width: 100vw;
+    height: 700px;
+    background: rgb(228, 228, 228);
+}
+
+.section1 {
+    width: 40%;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    padding: 10px;
+    word-wrap: break-word;
+    height: 400px;
+}
+
+.textBlock h2 {
+    font-size: 3rem;
+    color: black;
+    width: 300px;
+    margin-top: 0;
+}
+
+.textBlock p {
+    font-size: 1rem;
+    color: black;
+    width: 500px;
+}
+
+.section2 {
+    width: 60%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.card {
+    width: 200px;
+    height: 130px;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(0, 216, 169, 0.815);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    width: 180px;
+    margin: 6px 0 30px 0;
+    font-size: 2.2rem;
+}
+
+.card p {
+    font-size: .8rem;
+    margin: 0;
+}
+
+
+
+/* Forth div  */
+
+.fourthDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100vw;
+    height: 1000px;
+}
+
+.border2 {
+    width: 90%;
+    height: 800px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 {
+    width: 50%;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 216, 169, 0.815);;
+}
+
+.textDiv2{
+    position: absolute;
+    text-align: center;
+}
+
+.textDiv2 h2 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.textDiv2 p {
+    font-size: 2.5rem;
+    width: 400px;
+}
+
+.textDiv2 button {
+    background: #000;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: 0;
+}
+
+.section2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.imgDiv3{
+    width: 100%;
+}
+
+.imgDiv3 img{
+    width: 100%;
+}
+
+.textDiv3 h3{
+    font-size: 2rem;
+}

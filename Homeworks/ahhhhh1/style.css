@@ -1,0 +1,138 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #1a2a40;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a2a40;
+}
+
+.navbar__brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar__login {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar__cta {
+    padding: 10px 20px;
+    background-color: #4eb7ff;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero__content {
+    max-width: 600px;
+    margin-left: 150px;
+}
+
+.hero__tagline {
+    color: #4eb7ff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero__description {
+    color: #b0b0b0;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button--primary {
+    background-color: #4eb7ff;
+    color: #ffffff;
+}
+
+.button--primary:hover {
+    background-color: #66c7ff;
+}
+
+.button--secondary {
+    background-color: transparent;
+    color: #4eb7ff;
+    border: 2px solid #4eb7ff;
+}
+
+.button--secondary:hover {
+    background-color: #4eb7ff;
+    color: #ffffff;
+}
+
+.hero__image{
+    width: 40%;
+    margin:0 10%;
+}
+
+.hero__image img {
+    width: 100%;
+}
+
+.noLegs{
+    width: 75%;
+}

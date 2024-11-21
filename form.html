@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Homework</title>
+    <link rel="stylesheet" href="formStyles.css">
+</head>
+
+<body>
+    <h1 class="title">Add New Homework</h1>
+    <form id="homework-form">
+        <label>
+            Image URL:
+            <input type="text" id="img-url" placeholder="Enter image URL" required>
+        </label>
+        <br><br>
+        <label>
+            Title:
+            <input type="text" id="homework-title" placeholder="Enter title" required>
+        </label>
+        <br><br>
+        <label>
+            Description:
+            <input type="text" id="homework-description" placeholder="Enter description" required>
+        </label>
+        <br><br>
+        <button type="button" onclick="submitHomework()">Submit</button>
+    </form>
+
+    <script>
+        const apiUrl = "https://673f23ffa9bc276ec4b75913.mockapi.io/site/v1/Sites"
+
+        async function submitHomework() {
+            const imgName = document.getElementById("img-url").value
+            const img = `/img/${imgName}.jpg`
+            const title = document.getElementById("homework-title").value
+            const description = document.getElementById("homework-description").value
+
+            const newHomework = {
+                img: img,
+                title: title,
+                description: description
+            }
+            try {
+                const response = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(newHomework)
+                })
+                if (response.ok) {
+                    window.location.href = "index.html"
+                } else {
+                    alert("Failed to submit homework. Please try again.")
+                }
+            } catch (error) {
+                console.error("Error submitting homework:", error)
+                alert("An error occurred. Please try again later.")
+            }
+        }
+    </script>
+</body>
+
+</html>
