@@ -31,10 +31,11 @@
 
     <script>
         const apiUrl = "https://673f23ffa9bc276ec4b75913.mockapi.io/site/v1/Sites"
+        const ghFile = 'https://raw.githubusercontent.com/sargisx/sites/master'
 
         async function submitHomework() {
             const imgName = document.getElementById("img-url").value
-            const img = `/img/${imgName}.jpg`
+            const img = `${ghFile}/img/${imgName}.jpg`
             const title = document.getElementById("homework-title").value
             const description = document.getElementById("homework-description").value
 
