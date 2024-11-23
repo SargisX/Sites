@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+
+        }
+
+        .navbar {
+            background-color: #343a40;
+
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .hero-section {
+            background: url('./img/1.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            padding: 100px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero-section .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hero-section {
+            padding: 50px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+        }
+
+        .flex-box {
+            justify-content: center;
+        }
+
+        .cart {
+            margin-right: 25px;
+        }
+
+        .cart img {
+            width: 25px;
+            height: 25px;
+            margin-left: 8px;
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Game Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link cart" href="#">Cart<img
+                                src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../games.html">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section text-center min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="flex-box">
+            <h1 class="display-3">Welcome to Game Store</h1>
+            <p class="lead">Your one-stop shop for awesome games, discounts, and more!</p>
+            <a href="login.html" class="btn btn-primary btn-lg justify-self-center">Get Started</a>
+        </div>
+    </div>
+
+
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Games on Sale</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="./img/2.jpg" class="card-img-top" alt="Game 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Far Cry 3</h5>
+                        <p class="card-text">Enjoy this epic adventure game at 50% off!</p>
+                        <p class="text-danger fw-bold">$19.99 <span
+                                class="text-decoration-line-through text-muted">$39.99</span></p>
+                        <a href="/Homeworks/ahhhhh7/GamePages/game1.html" class="btn btn-outline-primary">View Game</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="./img/3.jpg" class="card-img-top" alt="Game 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Far Cry 5</h5>
+                        <p class="card-text">Grab this thrilling shooter game at 70% off!</p>
+                        <p class="text-danger fw-bold">$14.99 <span
+                                class="text-decoration-line-through text-muted">$49.99</span></p>
+                        <a href="/Homeworks/ahhhhh7/GamePages/game2.html" class="btn btn-outline-primary">View Game</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="./img/4.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Far Cry 6</h5>
+                        <p class="card-text">Top-rated RPG now available at 40% off!</p>
+                        <p class="text-danger fw-bold">$29.99 <span
+                                class="text-decoration-line-through text-muted">$49.99</span></p>
+                        <a href="/Homeworks/ahhhhh7/GamePages/game3.html" class="btn btn-outline-primary">View Game</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>© 2024 Game Store. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

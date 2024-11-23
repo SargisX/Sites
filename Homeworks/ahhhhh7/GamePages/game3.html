@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Far Cry 6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .gallery .main-img {
+            margin-bottom: 20px;
+            height: 360px;
+            object-fit: cover;
+        }
+
+        .game-info h1,
+        .game-info p {
+            margin-bottom: 20px;
+        }
+
+        .comments img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .comments .comment {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        .comments .comment:last-child {
+            border-bottom: none;
+        }
+
+        .bg {
+            background: url('../img/17.jpg') center/cover no-repeat;
+        }
+
+        .main-bg {
+            background: whitesmoke;
+            padding-top: 25px;
+        }
+
+        .cart {
+            margin-right: 25px;
+        }
+
+        .cart img {
+            width: 25px;
+            height: 25px;
+            margin-left: 8px;
+            filter: invert(1);
+        }
+
+        .item-img img {
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .select-img {
+            height: 425px;
+            object-fit: cover;
+        }
+
+        .text-color {
+            color: rgb(124, 124, 124);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Game Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link cart" href="#">Cart<img
+                                src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../games.html">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="bg">
+        <div class="container mt-5 main-bg">
+            <div class="row">
+                <!-- Gallery Section -->
+                <div class="col-lg-6">
+                    <div class="gallery">
+                        <img src="../img/4.jpg" alt="Main Image" class="main-img">
+                        <div class="row g-2">
+                            <div class="col-3 item-img"><img src="../img/FarCry/9.jpg" alt="Game Image"></div>
+                            <div class="col-3 item-img"><img src="../img/FarCry/10.jpg" alt="Game Image"></div>
+                            <div class="col-3 item-img"><img src="../img/FarCry/11.jpg" alt="Game Image"></div>
+                            <div class="col-3 item-img"><img src="../img/FarCry/12.jpg" alt="Game Image"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Details Section -->
+                <div class="col-lg-6 game-info">
+                    <h1>Far Cry 6</h1>
+                    <p>Unleash revolution in Far Cry 6, where you play as Dani Rojas, a guerrilla fighter on a mission
+                        to overthrow the oppressive dictator Anton Castillo in the fictional island of Yara. Battle
+                        through lush jungles and urban environments in a quest to free the people of Yara. Featuring
+                        vast open-world exploration, intense combat, and a story of defiance, Far Cry 6 offers a
+                        high-octane, action-packed adventure.
+                    </p>
+                    <h3>Price: $29.99</h3>
+                    <div class="d-flex gap-3 mb-3">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Buy Now</button>
+                    </div>
+                    <p>Platform: PC</p>
+                    <p>Release Date: 2021</p>
+                </div>
+            </div>
+
+            <!-- Similar Games Section -->
+            <div class="mt-5">
+                <h2>Similar Games</h2>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="../img/2.jpg" class="card-img-top select-img" alt="Game Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Far Cry 3</h5>
+                                <p class="card-text text-color">Survive the wilderness and fight back in Far Cry 3, an
+                                    open-world first-person shooter set on a tropical .....
+                                </p>
+                                <a href="../GamePages/game1.html" class="btn btn-outline-primary">View Game</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="../img/3.jpg" class="card-img-top select-img" alt="Game Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Far Cry 5</h5>
+                                <p class="card-text text-color">The world is on the brink of collapse in Far Cry 5,
+                                    where a
+                                    doomsday cult controls Hope County .....
+                                </p>
+                                <a href="../GamePages/game2.html" class="btn btn-outline-primary">View Game</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments and Reviews Section -->
+            <div class="mt-5">
+                <h2>Comments and Reviews</h2>
+                <div class="comments">
+                    <div class="comment d-flex align-items-start">
+                        <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                        <div>
+                            <h6>SargisX</h6>
+                            <p>Great game! Highly recommended.</p>
+                        </div>
+                    </div>
+                    <div class="comment d-flex align-items-start">
+                        <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                        <div>
+                            <h6>Artyuyr</h6>
+                            <p>Awesome graphics and gameplay!</p>
+                        </div>
+                    </div>
+                    <div class="comment d-flex align-items-start">
+                        <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                        <div>
+                            <h6>Edick</h6>
+                            <p>Good value for money.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
