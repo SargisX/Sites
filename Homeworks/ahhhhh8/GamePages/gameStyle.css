@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    padding: 25px 12px 0 12px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item-img{
+    width: 153px;
+}
+
+.col {
+    flex: 1;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 98vw;
+    z-index: 11111;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.navbar-menu.active {
+    display: flex;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #aaa;
+}
+
+.cart img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    filter: invert(1);
+}
+
+.text-color {
+    color: rgb(124, 124, 124);
+}
+
+.cart {
+    margin-right: 25px;
+    display: flex;
+}
+
+/* Gallery */
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.main-img {
+    margin-bottom: 20px;
+    height: 360px;
+    object-fit: cover;
+}
+
+.item-img img {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Game Info */
+.game-info h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-primary,
+.btn-success {
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-primary-outline{
+    border: 1px solid #007bff;
+    padding: 10px;
+    border-radius: 7px;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+}
+
+.btn-primary-outline:hover {
+    background: #007bff;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    opacity: 0.8;
+}
+
+/* Similar Games */
+.similar-games .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 643px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body h5{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.select-img {
+    height: 425px;
+    object-fit: cover;
+}
+
+/* Comments */
+.comments .comment {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.comment h6{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.comments .comment:last-child {
+    border-bottom: none;
+}
+
+.comments img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Backgrounds */
+.bg {
+    background: url('../img/17.jpg') center/cover no-repeat;
+    padding-top: 6rem;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main-bg {
+    background-color: whitesmoke;
+    padding-top: 25px;
+}
+
+.text-color {
+    color: rgb(124, 124, 124);
+}
