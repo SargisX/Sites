@@ -18,7 +18,7 @@ body {
     gap: 10px;
 }
 
-.item-img{
+.item-img {
     width: 153px;
 }
 
@@ -147,7 +147,7 @@ body {
     background-color: #28a745;
 }
 
-.btn-primary-outline{
+.btn-primary-outline {
     border: 1px solid #007bff;
     padding: 10px;
     border-radius: 7px;
@@ -181,7 +181,7 @@ body {
     padding: 10px;
 }
 
-.card-body h5{
+.card-body h5 {
     font-size: 1rem;
     margin: 0;
 }
@@ -199,7 +199,7 @@ body {
     padding: 15px 0;
 }
 
-.comment h6{
+.comment h6 {
     font-size: 1rem;
     margin: 0;
 }
@@ -222,7 +222,7 @@ body {
 
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
